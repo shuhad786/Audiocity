@@ -51,33 +51,47 @@ After you're finished please remove all the comments and instructions!
 
 **[Audiocity]** A Kotlin based app called "Audiocity" used to create a playlist where a user can rate and comment on a song by a certain artist and later view the comments and ratings
 
-**[Source code]**
+**[Source code 1]**
 
 ![Source code 1.png](img1.png)
 
-**[Source code]**
+This is images of my source code
+
+**[Source code 2]**
 
 ![Source code 2.png](img2.png)
 
-**[Source code]**
+This is images of my source code
 
-![Source code 3.png](img 3.png)
+**[Source code 3]**
+
+![Source code 3.png](img3.png)
+
+This is images of my source code
 
 **[Home Screen]**
 
-![Home Screen.png](img%204.png)
+![Home Screen.png](homeScreen.png)
+
+<p>This is the home screen which you start on and you have 3 options to choose from "add to playlist", "view playlist", or "exit"</p>
 
 **[Add play list]**
 
-![Add play list.png](img%205.png)
+![Add play list.png](Addtoplaylist.png)
+
+<p>When clicking "add to playlist" it takes you to this modal which takes in the users inputs</p>
 
 **[Error handling]**
 
-![Error handling.png](img%206.png)
+![Error handling.png](errorMessage.png)
+
+<p>When the user inputs a value greater than 5 the error appears and displays the message for the user</p>
 
 **[View Screen]**
 
-![View Screen.png](img%207.png)
+![View Screen.png](viewplaylist.png)
+
+<p>Finally when you click on confirm in the modal you can click on "view playlist" and go to the next screen and view the playlist with the ratings and comments</p>
 
 ## 🛠 Built With <a name="built-with">Android studio and BlueStack 5</a>
 
@@ -125,7 +139,7 @@ In order to run this project you need:
 
 👤 **Shuhad Loofer**
 
-- GitHub: [@Shuhad786](https://github.com/shuhad786)
+- GitHub: [@shuhad786](https://github.com/shuhad786)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
