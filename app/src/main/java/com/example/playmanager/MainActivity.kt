@@ -88,7 +88,7 @@ fun MainScreen(navController: NavController, viewModel: PackingListViewModel) {
         if (showDialog) {
             AlertDialog(
                 onDismissRequest = { showDialog = false },
-                title = { Text("Updated playlist") },
+                title = { Text("New Playlist") },
                 text = {
                     Column {
                         OutlinedTextField(
