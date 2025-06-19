@@ -53,31 +53,31 @@ After you're finished please remove all the comments and instructions!
 
 **[Source code]**
 
-![Source code 1.png](Screenshot (5).png)
+![Source code 1.png](img 1.png)
 
 **[Source code]**
 
-![Source code 2.png](Screenshot (6).png)
+![Source code 2.png](img 2.png)
 
 **[Source code]**
 
-![Source code 3.png](Screenshot (7).png)
+![Source code 3.png](img 3.png)
 
 **[Home Screen]**
 
-![Home Screen.png](Screenshot (8).png)
+![Home Screen.png](img 4.png)
 
 **[Add play list]**
 
-![Add play list.png](Screenshot (9).png)
+![Add play list.png](img 5.png)
 
 **[Error handling]**
 
-![Error handling.png](Screenshot (10).png)
+![Error handling.png](img 6.png)
 
 **[View Screen]**
 
-![View Screen.png](Screenshot (11).png)
+![View Screen.png](img 7.png)
 
 ## 🛠 Built With <a name="built-with">Android studio and BlueStack 5</a>
 
