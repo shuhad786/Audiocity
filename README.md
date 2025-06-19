@@ -22,7 +22,7 @@ After you're finished please remove all the comments and instructions!
 -->
 
 <div align="center">
- 
+
 
 <h2><b>Audiocity</b></h2>
 
@@ -47,29 +47,37 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Flash-Card] <a name="about-project"></a>
+# 📖 [Audiocity] <a name="about-project"></a>
 
-**[Flash-Card]** A Kotlin based app called "Flash Card Game" to help the user when studying by asking questions "True" or "False" and the user needs to answer, then they receive a score and can review the questions they have answered both correctly and incorrectly..
+**[Audiocity]** A Kotlin based app called "Audiocity" used to create a playlist where a user can rate and comment on a song by a certain artist and later view the comments and ratings
 
-**[Icon Launcher]**
+**[Source code]**
 
-![Icon Launcher.png](img_5.png) 
+![Source code 1.png](Screenshot (5).png)
+
+**[Source code]**
+
+![Source code 2.png](Screenshot (6).png)
+
+**[Source code]**
+
+![Source code 3.png](Screenshot (7).png)
 
 **[Home Screen]**
 
-![Home Screen.png](img.png) 
+![Home Screen.png](Screenshot (8).png)
 
-**[Question Screen example]**
+**[Add play list]**
 
-![Question Screen example.png](img_1.png) 
+![Add play list.png](Screenshot (9).png)
 
-**[Score Screen]**
+**[Error handling]**
 
-![Score Screen.png](img_2.png) 
+![Error handling.png](Screenshot (10).png)
 
-**[Review Screen]**
+**[View Screen]**
 
-![Review Screen.png](img_4.png) 
+![View Screen.png](Screenshot (11).png)
 
 ## 🛠 Built With <a name="built-with">Android studio and BlueStack 5</a>
 
@@ -81,10 +89,6 @@ After you're finished please remove all the comments and instructions!
     <li><a href="https://developer.android.com/">Kotlin</a></li>
   </ul>
 </details>
-
-## Live Demo
-
-> Live Demo [Youtube] https://youtu.be/91bOGzcmoso
 
 <!-- GETTING STARTED -->
 
@@ -101,7 +105,7 @@ In order to run this project you need:
 - GitHub account
 - BLUESTACK 5
 
-> Clone this repository link for the Kotlin app [KOTLIN] https://github.com/shuhad786/Flash-Card.git
+> Clone this repository link for the Kotlin app [KOTLIN] https://github.com/shuhad786/Audiocity.git
 
 ### Setup
 
@@ -121,19 +125,8 @@ In order to run this project you need:
 
 👤 **Shuhad Loofer**
 
-- GitHub: [@Shuhad786](https://github.com/Shuhad786)
+- GitHub: [@Shuhad786](https://github.com/shuhad786)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Implement different categories]**
-- [ ] **[Create an online Score Board]**
-
 <!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
