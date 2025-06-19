@@ -53,15 +53,15 @@ After you're finished please remove all the comments and instructions!
 
 **[Source code]**
 
-![Source code 1.png](img_1.png)
+![Source code 1.png](img1.png)
 
 **[Source code]**
 
-![Source code 2.png](img%202.png)
+![Source code 2.png](img2.png)
 
 **[Source code]**
 
-![Source code 3.png](img%203.png)
+![Source code 3.png](img 3.png)
 
 **[Home Screen]**
 
