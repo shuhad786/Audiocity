@@ -49,7 +49,8 @@ fun MainScreen(navController: NavController, viewModel: PackingListViewModel) {
         .padding(16.dp)
         .fillMaxSize(),
         verticalArrangement = Arrangement.SpaceEvenly,
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+
         ) {
 
 
@@ -145,11 +146,14 @@ fun MainScreen(navController: NavController, viewModel: PackingListViewModel) {
 
 @Composable
 fun NextScreen(navController: NavController, viewModel: PackingListViewModel) {
-    Column(modifier = Modifier.padding(16.dp),
-        verticalArrangement = Arrangement.SpaceEvenly
+    Column(modifier = Modifier
+        .padding(16.dp)
+        .fillMaxSize(),
+        verticalArrangement = Arrangement.SpaceEvenly,
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Button(onClick = { navController.navigateUp() }) {
-            Text("Back")
+            Text("Return to main screen")
         }
         Column {
             for (item in viewModel.items) {
