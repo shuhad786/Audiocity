@@ -5,6 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.compose.animation.core.*
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.material3.*
@@ -15,6 +17,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.navigation.NavController
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.graphics.Shadow
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.geometry.Offset
 import androidx.navigation.compose.*
 import kotlin.system.exitProcess
 
@@ -47,20 +54,22 @@ fun MainScreen(navController: NavController, viewModel: PackingListViewModel) {
 
     Column(modifier = Modifier
         .padding(16.dp)
-        .fillMaxSize(),
+        .fillMaxSize()
+        .background(Color.Black),
         verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally,
-
         ) {
-
+        PulsingShadowText()
 
             // adds to playlist
-            Button(onClick = { showDialog = true }) {
-                Text("Add to playlist")
+            Button(onClick = { showDialog = true },colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
+            ) {
+                Text("Add to playlist", color = Color.Cyan)
             }
             // navigates to next page
-            Button(onClick = { navController.navigate("nextPage")}) {
-                Text("View playlist")
+            Button(onClick = { navController.navigate("nextPage")},
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Black)) {
+                Text("View playlist", color = Color.Cyan)
             }
             // exits application
             Button(
@@ -69,9 +78,9 @@ fun MainScreen(navController: NavController, viewModel: PackingListViewModel) {
                     MainActivity().finish()
                     // this closes the application
                     exitProcess(0)
-                }
+                },colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
             ) {
-                Text("Exit")
+                Text("Exit", color = Color.Red)
             }
 
         if (showDialog) {
@@ -135,8 +144,8 @@ fun MainScreen(navController: NavController, viewModel: PackingListViewModel) {
                             rating = ""
                             comments = ""
                         }
-                    }){
-                        Text("Confirm")
+                    },colors = ButtonDefaults.buttonColors(containerColor = Color.Black)){
+                        Text("Confirm", color = Color.Cyan)
                     }
                 }
             )
@@ -146,16 +155,36 @@ fun MainScreen(navController: NavController, viewModel: PackingListViewModel) {
 
 @Composable
 fun NextScreen(navController: NavController, viewModel: PackingListViewModel) {
-    Column(modifier = Modifier
-        .padding(16.dp)
-        .fillMaxSize(),
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+            .background(Color.Black),
         verticalArrangement = Arrangement.SpaceEvenly,
-        horizontalAlignment = Alignment.CenterHorizontally,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Button(onClick = { navController.navigateUp() }) {
-            Text("Return to main screen")
-        }
-        Column {
+        Spacer(modifier = Modifier.height(24.dp))
+        Text(
+            text = "Playlist",
+            style = TextStyle(
+                color = Color.Black, // Black text color
+                fontSize = 48.sp,
+                fontWeight = FontWeight.Bold,
+                shadow = Shadow(
+                    color = Color.Cyan, // Glow color
+                    offset = Offset(0f, 0f), // No offset
+                    blurRadius = 20f // Adjust blur radius for glow effect
+                )
+            ),
+            textAlign = TextAlign.Center // Center the text
+        )
+
+        Column(
+            modifier = Modifier.fillMaxSize().padding(16.dp),
+            verticalArrangement = Arrangement.SpaceEvenly,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
             for (item in viewModel.items) {
                 // Safely access the item properties
                 val songTitle = item["songTitle"] as? String ?: "Unknown"
@@ -164,8 +193,48 @@ fun NextScreen(navController: NavController, viewModel: PackingListViewModel) {
                 val comments = item["comments"] as? String ?: "N/A"
 
                 // Display the values using Text composable
-                Text("Song Title: $songTitle\nArtist Name: $artistName\nRating out of 5: $rating\nComments: $comments")
+                Text("Song Title: $songTitle", color = Color.White)
+                Text("Artist Name: $artistName", color = Color.White)
+                Text("Rating: $rating", color = Color.White)
+                Text("Comments: $comments", color = Color.White)
+            }
+            Button(onClick = { navController.navigateUp() },
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
+            ) {
+                Text("Return to main screen", color = Color.Cyan)
             }
         }
+
     }
+}
+
+@Composable
+fun PulsingShadowText() {
+    // Define the animation for the blur radius
+    val transition = rememberInfiniteTransition()
+    val blurRadius by transition.animateFloat(
+        initialValue = 10f,
+        targetValue = 40f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(durationMillis = 1000, easing = FastOutSlowInEasing),
+            repeatMode = RepeatMode.Reverse
+        )
+    )
+
+    // Text with pulsing shadow effect
+    Text(
+        text = "Audiocity",
+        style = TextStyle(
+            color = Color.Black,
+            fontSize = 48.sp,
+            fontWeight = FontWeight.Bold,
+            shadow = Shadow(
+                color = Color.Cyan,
+                offset = Offset(2f, 2f),
+                blurRadius = blurRadius // Use animated blur radius
+            )
+        ),
+        textAlign = TextAlign.Center
+    )
+    Spacer(modifier = Modifier.height(30.dp))
 }
