@@ -51,33 +51,33 @@ After you're finished please remove all the comments and instructions!
 
 **[Audiocity]** A Kotlin based app called "Audiocity" used to create a playlist where a user can rate and comment on a song by a certain artist and later view the comments and ratings
 
-**[Source code 1]**
+**[Source code]**
 
-![Source code 1.png](img 1.png)
+![Source code 1.png](img%201.png)
 
-**[Source code 2]**
+**[Source code]**
 
-![Source code 2.png](img 2.png)
+![Source code 2.png](img%202.png)
 
-**[Source code 3]**
+**[Source code]**
 
-![Source code 3.png](img 3.png)
+![Source code 3.png](img%203.png)
 
 **[Home Screen]**
 
-![Home Screen.png](img 4.png)
+![Home Screen.png](img%204.png)
 
 **[Add play list]**
 
-![Add play list.png](img 5.png)
+![Add play list.png](img%205.png)
 
 **[Error handling]**
 
-![Error handling.png](img 6.png)
+![Error handling.png](img%206.png)
 
 **[View Screen]**
 
-![View Screen.png](img 7.png)
+![View Screen.png](img%207.png)
 
 ## 🛠 Built With <a name="built-with">Android studio and BlueStack 5</a>
 
