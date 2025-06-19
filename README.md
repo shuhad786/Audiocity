@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 <div align="center">
  
 
-<h3><b>Audiocity</b></h3>
+<h2><b>Audiocity</b></h2>
 
 </div>
 
