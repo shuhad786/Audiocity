@@ -53,7 +53,7 @@ After you're finished please remove all the comments and instructions!
 
 **[Source code]**
 
-![Source code 1.png](img%201.png)
+![Source code 1.png](img_1.png)
 
 **[Source code]**
 
